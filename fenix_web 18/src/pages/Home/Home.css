@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5%;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navlist a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.secciones {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  background-color: #ddd;
+}
+
+.secciones-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.secciones-img img {
+  width: 100%; /* Ensures the image is responsive */
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+
+  .navlist {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hide by default, show when menu icon is clicked */
+      position: absolute;
+      background-color: #333;
+      top: 48px; /* Positioning right below the header */
+      left: 0;
+      right: 0;
+  }
+
+  .navlist.open {
+      display: flex;
+  }
+
+  .secciones {
+      flex-direction: column;
+  }
+
+  .secciones-text {
+      padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      flex-direction: column;
+  }
+
+  .secciones-img {
+      order: -1; /* Image comes first */
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5%;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navlist a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.secciones {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  background-color: #ddd;
+}
+
+.secciones-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.secciones-img img {
+  width: 100%; /* Ensures the image is responsive */
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+
+  .navlist {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hide by default, show when menu icon is clicked */
+      position: absolute;
+      background-color: #333;
+      top: 48px; /* Positioning right below the header */
+      left: 0;
+      right: 0;
+  }
+
+  .navlist.open {
+      display: flex;
+  }
+
+  .secciones {
+      flex-direction: column;
+  }
+
+  .secciones-text {
+      padding: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      flex-direction: column;
+  }
+
+  .secciones-img {
+      order: -1; /* Image comes first */
+  }
+}

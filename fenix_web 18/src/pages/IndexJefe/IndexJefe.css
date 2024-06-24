@@ -1,0 +1,24 @@
+.welcome-admin {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+/* IndexJefe.css */
+.dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: transparent; /* Establece el color de fondo transparente */
+    border: none; /* Quita el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    outline: none; /* Quita el contorno alrededor del botón */
+  }
+  
+  /* Estilos adicionales para el botón cuando se pasa el cursor sobre él */
+  .dropbtn:hover {
+    background-color: #f1f1f1; /* Cambia el color de fondo cuando se pasa el cursor */
+  }
+  

@@ -1,0 +1,248 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+}
+
+.brand-highlight {
+  color: #f31212;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar ul li:hover .dropdown-content {
+  display: block;
+}
+
+.navbar ul li .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.sub-navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.sub-navbar button {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sub-navbar button:hover {
+  background-color: #2980b9;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.edit-button, .save-button, .cancel-button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #ff4405;
+  color: white;
+}
+
+.save-button {
+  background-color: #27ae60;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #c0392b;
+  color: white;
+}
+.bodega-card-container,
+.locales-card-container,
+.marcas-producto-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.bodega-card,
+.locales-card,
+.marcas-producto-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 15px; /* Aumentamos el radio del borde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aumentamos la intensidad de la sombra */
+  padding: 22px;
+  width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.bodega-card:hover,
+.locales-card:hover,
+.marcas-producto-card:hover {
+  transform: translateY(-10px);
+}
+
+.bodega-card h3,
+.locales-card h3,
+.marcas-producto-card h3 {
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bodega-card p,
+.locales-card p,
+.marcas-producto-card p {
+  color: #333333; /* Cambiamos el color del texto */
+  font-size: 16px; /* Reducimos el tamaño del texto */
+  margin-bottom: 8px; /* Ajustamos el espacio inferior */
+}
+
+.bodega-card a,
+.locales-card a,
+.marcas-producto-card a {
+  color: #3498db; /* Cambiamos el color del enlace */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bodega-card a:hover,
+.locales-card a:hover,
+.marcas-producto-card a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los botones */
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.edit-button,
+.save-button,
+.cancel-button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #ff4405;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ff6c40; /* Cambiamos el color al pasar el ratón */
+}
+
+.save-button {
+  background-color: #27ae60;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #2ecc71; /* Cambiamos el color al pasar el ratón */
+}
+
+.cancel-button {
+  background-color: #c0392b;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #e74c3c; /* Cambiamos el color al pasar el ratón */
+}

@@ -1,0 +1,131 @@
+/* Estilos generales del contenedor */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+/* Estilos para el enlace de retroceso */
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Estilos para el título */
+.title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Estilos para el contenido */
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-image {
+  width: 100%;
+  height: 400px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Recorta la imagen para que encaje en el contenedor */
+}
+
+/* Estilos para los detalles del producto */
+.details {
+  flex: 1;
+  margin-left: 40px;
+  max-width: 500px;
+}
+
+/* Estilos para el título del producto */
+.product-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de tallas */
+.size-container {
+  margin-bottom: 20px;
+}
+
+/* Estilos para los botones de tamaño */
+.size-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size-button {
+  margin: 5px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-button:hover {
+  background-color: lightblue;
+  color: black;
+  border: 1px solid lightblue;
+}
+
+.size-button.selected {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+}
+
+/* Estilos para el contenedor de cantidad */
+.quantity-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* Estilos para la sección de descripción y especificaciones */
+.description, .specifications {
+  margin-top: 20px;
+}
+
+.description-title, .specifications-title {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.description-content, .specifications-content {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

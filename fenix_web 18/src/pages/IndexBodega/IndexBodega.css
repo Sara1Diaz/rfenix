@@ -1,0 +1,149 @@
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 5%;
+  color: #000000;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand-highlight {
+  color: #ff0101;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 15px;
+  position: relative;
+}
+
+.navbar ul li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+/* Estilos para los dropdowns */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar el dropdown al pasar el ratón */
+.navbar ul li:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos para el botón de cerrar sesión */
+.logout-button {
+  background-color: #5578d1;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #192b7d;
+}
+
+/* Estilos para la imagen del banner */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: auto; /* Mantener la proporción de aspecto */
+  display: block;
+}
+
+/* Estilos para los botones de navegación */
+.banner-navigation {
+  position: absolute;
+  bottom: 10px; /* Posicionar cerca del borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-button {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #cccccc;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.nav-button.active {
+  background-color: #666666;
+}
+
+/* Reglas de CSS para pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .navbar ul li a {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .logout-button {
+    margin-top: 15px;
+  }
+}
+
+/* Estilos adicionales */
+.navbar ul li:hover > a {
+  color: #ff0101; /* Resaltar link cuando el dropdown está activo */
+}

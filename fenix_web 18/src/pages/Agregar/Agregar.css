@@ -1,0 +1,16 @@
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.form-column {
+    width: 45%; /* Ajusta el ancho de las columnas */
+}
+
+.form-column label,
+.form-column input {
+    display: block;
+    margin-bottom: 10px;
+}

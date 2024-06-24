@@ -1,0 +1,112 @@
+.table-container {
+  margin-top: 10px; /* Reducido el margen superior */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Nuevo margen superior */
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para resaltar la fila activa */
+table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilos para el botón de enviar credenciales */
+.enviar-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.enviar-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el botón Editar */
+.editar-btn {
+background-color: #007bff; /* Azul */
+color: #fff;
+padding: 5px 10px;
+border: none;
+cursor: pointer;
+border-radius: 3px; /* Agregando bordes redondeados */
+}
+
+.editar-btn:hover {
+background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+
+
+/* Estilos para el formulario de edición */
+.editar-form-container {
+padding: 20px; /* Espaciado interno */
+border-radius: 5px; /* Bordes redondeados */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.editar-form-container h2 {
+margin-bottom: 10px; /* Espaciado inferior */
+color: #000000; /* Color del texto */
+}
+
+.editar-form-container label {
+font-weight: bold; /* Texto en negrita */
+}
+
+.editar-form-container input[type="text"] {
+width: 100%; /* Ancho completo */
+padding: 8px; /* Espaciado interno */
+margin-bottom: 10px; /* Espaciado inferior */
+border: 1px solid #ccc; /* Borde del input */
+border-radius: 3px; /* Bordes redondeados */
+box-sizing: border-box; /* Incluir el padding en el ancho */
+}
+
+.editar-form-container button[type="submit"] {
+background-color: #007bff; /* Color de fondo */
+color: #fff; /* Color del texto */
+padding: 8px 20px; /* Espaciado interno */
+border: none; /* Sin borde */
+border-radius: 3px; /* Bordes redondeados */
+cursor: pointer; /* Cursor tipo mano */
+}
+
+.editar-form-container button[type="submit"]:hover {
+background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* estilos para el boton cancelar  */
+.button-container {
+display: flex;
+justify-content: space-between; /* Espaciado uniforme entre los botones */
+}
+
+
+.cancel-btn {
+background-color: #dc3545; /* Color de fondo rojo */
+color: #fff; /* Color del texto */
+padding: 8px 20px; /* Espaciado interno */
+border: none; /* Sin borde */
+border-radius: 3px; /* Bordes redondeados */
+cursor: pointer; /* Cursor tipo mano */
+margin: 0 auto; /* Centrar el botón */
+}
+
+.cancel-btn:hover {
+background-color: #c82333; /* Color de fondo rojo más oscuro al pasar el mouse */
+}

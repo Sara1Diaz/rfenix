@@ -1,0 +1,135 @@
+/* Estilos generales del contenedor */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Estilos para el enlace de retroceso */
+  .back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+  
+  /* Estilos para el título */
+  .title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+  }
+  
+  /* Estilos para el contenido */
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  /* Estilos para el contenedor del carrusel */
+  .carousel-container {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  /* Estilos para las imágenes del carrusel */
+  .carousel-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para los detalles del producto */
+  .details {
+    flex: 1;
+    margin-left: 40px;
+    max-width: 500px;
+  }
+  
+  /* Estilos para el título del producto */
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los botones de tamaño */
+  .size-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .size-button {
+    margin: 5px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .size-button:hover {
+    background-color: lightblue;
+    color: black;
+    border: 1px solid lightblue;
+  }
+  
+  .size-button.selected {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+  }
+  
+  /* Estilos para el contenedor de cantidad */
+  .quantity-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  /* Estilos para el botón de agregar al carrito */
+  .add-to-cart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; /* Color de fondo original */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #007bff; /* Cambio de color al pasar el cursor */
+  }
+  
+  /* Estilos para las tarjetas de locales */
+  .local-card {
+    background-color: #f5f5f5;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .local-card.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
